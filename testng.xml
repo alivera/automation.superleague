@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+
+	<listeners>
+		<listener class-name="resources.Listeners"/>
+		<listener class-name="resources.ExtentReporterNG"/>
+	</listeners>
+
+  <test name="Opening Landing Page">
+    <classes>
+    	<class name="testcases.HomePage_Landing_Test"/>
+    </classes>
+  </test> <!-- End Test -->
+  
+  <test name="Navigating to Login/SignUp Page">
+    <classes>
+    	<class name="testcases.HomePage_Login_Test"/>
+    </classes>
+  </test> <!-- End Test -->
+  
+  <test name="Signing in using invalid and invalid email">
+    <classes>
+        <class name="testcases.SignUpPage_Login_Test"/>
+    </classes>
+  </test> <!-- End Test -->
+  
+  <test name="Navigating to Registrationg Page">
+    <classes>
+        <class name="testcases.SignUpPage_Register_Test"/>
+    </classes>
+  </test> <!-- End Test -->
+  
+  
+</suite> <!-- Suite -->
