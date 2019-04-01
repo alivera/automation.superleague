@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>0/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Mar 02 23:01:52 PST 2019</td>
+<td>Started on:</td><td>Sat Mar 30 15:54:57 PDT 2019</td>
 </tr>
-<tr><td>Total time:</td><td>6 seconds (6747 ms)</td>
+<tr><td>Total time:</td><td>6 seconds (6481 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,12 +75,24 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='testcases.SignUpPage_Login_Test.LoginToAccount()'><b>LoginToAccount</b><br>Test class: testcases.SignUpPage_Login_Test<br>Parameters: https://www.superleague.com, failedtest@gmail.com, 12345678</td>
-<td><div><pre>java.lang.NullPointerException
-	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:24)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace150950036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace150950036'><pre>java.lang.NullPointerException
-	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:24)
+<td title='testcases.SignUpPage_Login_Test.LoginToAccount()'><b>LoginToAccount</b><br>Test class: testcases.SignUpPage_Login_Test<br>Parameters: https://www.superleague.com/login/, failedtest@gmail.com, 12345678</td>
+<td><div><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at pageobjects.SignUpPage_Login_PF.&lt;init&gt;(SignUpPage_Login_PF.java:20)
+	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:14)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1134894336", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1134894336'><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at pageobjects.SignUpPage_Login_PF.&lt;init&gt;(SignUpPage_Login_PF.java:20)
+	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -107,15 +119,27 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testcases.SignUpPage_Login_Test@60641ec8</td></tr>
+<td>1</td>
+<td>testcases.SignUpPage_Login_Test@4c398c80</td></tr>
 <tr>
-<td title='testcases.SignUpPage_Login_Test.LoginToAccount()'><b>LoginToAccount</b><br>Test class: testcases.SignUpPage_Login_Test<br>Parameters: https://www.superleague.com, buffboyali@gmail.com, messenger</td>
-<td><div><pre>java.lang.NullPointerException
-	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:24)
-... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace905650857", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace905650857'><pre>java.lang.NullPointerException
-	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:24)
+<td title='testcases.SignUpPage_Login_Test.LoginToAccount()'><b>LoginToAccount</b><br>Test class: testcases.SignUpPage_Login_Test<br>Parameters: https://www.superleague.com/login/, buffboyali@gmail.com, messenger</td>
+<td><div><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at pageobjects.SignUpPage_Login_PF.&lt;init&gt;(SignUpPage_Login_PF.java:20)
+	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:14)
+... Removed 25 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1092822", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1092822'><pre>java.lang.NullPointerException: null value in entry: url=null
+	at com.google.common.collect.CollectPreconditions.checkEntryNotNull(CollectPreconditions.java:32)
+	at com.google.common.collect.SingletonImmutableBiMap.&lt;init&gt;(SingletonImmutableBiMap.java:42)
+	at com.google.common.collect.ImmutableBiMap.of(ImmutableBiMap.java:72)
+	at com.google.common.collect.ImmutableMap.of(ImmutableMap.java:124)
+	at org.openqa.selenium.remote.RemoteWebDriver.get(RemoteWebDriver.java:277)
+	at pageobjects.SignUpPage_Login_PF.&lt;init&gt;(SignUpPage_Login_PF.java:20)
+	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:14)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,8 +166,8 @@ function toggleAllBoxes() {
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>0</td>
-<td>testcases.SignUpPage_Login_Test@60641ec8</td></tr>
+<td>1</td>
+<td>testcases.SignUpPage_Login_Test@4c398c80</td></tr>
 </table><p>
 </body>
 </html>

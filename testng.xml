@@ -7,27 +7,16 @@
 		<listener class-name="resources.ExtentReporterNG"/>
 	</listeners>
 
-  <test name="Opening Landing Page">
+  <test name="Opening Facebook Landing Page">
     <classes>
-    	<class name="testcases.HomePage_Landing_Test"/>
+    	<class name="testcases.FB_LandingPage_Test"/>
     </classes>
   </test> <!-- End Test -->
+
   
-  <test name="Navigating to Login/SignUp Page">
-    <classes>
-    	<class name="testcases.HomePage_Login_Test"/>
-    </classes>
-  </test> <!-- End Test -->
-  
-  <test name="Signing in using invalid and invalid email">
+  <test name="SuperLeague: Signing in using invalid and invalid email">
     <classes>
         <class name="testcases.SignUpPage_Login_Test"/>
-    </classes>
-  </test> <!-- End Test -->
-  
-  <test name="Navigating to Registrationg Page">
-    <classes>
-        <class name="testcases.SignUpPage_Register_Test"/>
     </classes>
   </test> <!-- End Test -->
   

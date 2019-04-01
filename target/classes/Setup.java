@@ -26,7 +26,7 @@ public class Setup {
 	public WebDriver initializeDriver() throws IOException {
 				
 		prop = new Properties();
-		FileInputStream fis = new FileInputStream("/Users/ali/eclipse-workspace/E2EProject/src/main/java/resources/data.properties");
+		FileInputStream fis = new FileInputStream("src/main/java/resources/data.properties");
 		prop.load(fis);
 		String browser = prop.getProperty("browser");
 		String chromedriverpath = prop.getProperty("chromedriverpath");
@@ -83,7 +83,7 @@ public class Setup {
 	//take screenshots
 	public void takeScreenshot(String result) throws IOException {
 		 File src= ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
-		 FileUtils.copyFile(src, new File("/Users/ali/eclipse-workspace/E2EProject/screenshots/"+result+System.currentTimeMillis()+".png"));
+		 FileUtils.copyFile(src, new File("screenshots/"+result+System.currentTimeMillis()+".png"));
 	}
 		
 }

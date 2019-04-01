@@ -1,5 +1,7 @@
 package pageobjects;
 
+import java.io.IOException;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.FindBy;
@@ -10,9 +12,8 @@ import resources.Setup;
 public class SignUpPage_Login_PF extends Setup{
 	
 	//initialize driver;
-	public SignUpPage_Login_PF(WebDriver driver) {
+	public SignUpPage_Login_PF(WebDriver driver) throws IOException {
 		PageFactory.initElements(driver, this);
-		Setup.driver = driver;
 	}
 	
 	//Page Objects

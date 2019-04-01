@@ -1,8 +1,8 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 54.555 s <<< FAILURE! - in TestSuite
-NavigateToHomePage(testcases.HomePage_Landing_Test)  Time elapsed: 4.107 s  <<< FAILURE!
-java.lang.AssertionError: expected [PLAY. WATCH. BELONG.] but found [JUMP. RUN. HIDE.]
-	at testcases.HomePage_Landing_Test.NavigateToHomePage(HomePage_Landing_Test.java:26)
+Tests run: 3, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 34.453 s <<< FAILURE! - in TestSuite
+Login(testcases.FB_LandingPage_Test)  Time elapsed: 4.129 s  <<< FAILURE!
+java.lang.AssertionError: expected [Share what's new] but found [Some Random Text]
+	at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:35)
 

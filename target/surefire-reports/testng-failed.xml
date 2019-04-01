@@ -5,13 +5,13 @@
     <listener class-name="resources.Listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test name="Opening Landing Page(failed)">
+  <test name="Opening Facebook Landing Page(failed)">
     <classes>
-      <class name="testcases.HomePage_Landing_Test">
+      <class name="testcases.FB_LandingPage_Test">
         <methods>
-          <include name="NavigateToHomePage"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- testcases.HomePage_Landing_Test -->
+      </class> <!-- testcases.FB_LandingPage_Test -->
     </classes>
-  </test> <!-- Opening Landing Page(failed) -->
+  </test> <!-- Opening Facebook Landing Page(failed) -->
 </suite> <!-- Failed suite [Suite] -->

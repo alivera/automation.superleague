@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 5 failed tests</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -54,7 +54,7 @@
                 </li>
                 <li>
                   <a href="#" panel-name="testlist-Suite" class="navigator-link ">
-                    <span class="test-stats">4 tests</span>
+                    <span class="test-stats">2 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">5 methods, 5 failed,   </span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,30 +102,29 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com, buffboyali@gmail.com, messenger)">LoginToAccount(https://www.superleague.com, buffboyali@gmail.com, messenger)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com, failedtest@gmail.com, 12345678)">LoginToAccount(https://www.superleague.com, failedtest@gmail.com, 12345678)</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.HomePage_Landing_Test" class="method navigator-link" hash-for-method="NavigateToHomePage">NavigateToHomePage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.HomePage_Login_Test" class="method navigator-link" hash-for-method="NavigateToLoginPage">NavigateToLoginPage</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Register_Test" class="method navigator-link" hash-for-method="NavigatetoRegistrationPage">NavigatetoRegistrationPage</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.FB_LandingPage_Test" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods passed suite-Suite"> (hide)</a> <!-- hide-methods passed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods passed suite-Suite"> (show)</a> <!-- show-methods passed suite-Suite -->
+                    </span>
+                    <div class="method-list-content passed suite-Suite">
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)">LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)">LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Suite -->
                   </li>
                 </ul>
               </div> <!-- suite-section-content -->
@@ -140,92 +139,46 @@
           <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
               <img src="failed.png"/>
-              <span class="class-name">testcases.HomePage_Login_Test</span>
+              <span class="class-name">testcases.FB_LandingPage_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="NavigateToLoginPage">
-                  </a> <!-- NavigateToLoginPage -->
-                  <span class="method-name">NavigateToLoginPage</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at testcases.HomePage_Login_Test.NavigateToLoginPage(HomePage_Login_Test.java:18)
-... Removed 25 stack frames
+                  <a name="Login">
+                  </a> <!-- Login -->
+                  <span class="method-name">Login</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [Share what&apos;s new] but found [meow moew meow]
+	at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:35)
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
+          <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.HomePage_Landing_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NavigateToHomePage">
-                  </a> <!-- NavigateToHomePage -->
-                  <span class="method-name">NavigateToHomePage</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at testcases.HomePage_Landing_Test.NavigateToHomePage(HomePage_Landing_Test.java:16)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
+              <img src="passed.png"/>
               <span class="class-name">testcases.SignUpPage_Login_Test</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginToAccount(https://www.superleague.com, buffboyali@gmail.com, messenger)">
-                  </a> <!-- LoginToAccount(https://www.superleague.com, buffboyali@gmail.com, messenger) -->
+                  <a name="LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)">
+                  </a> <!-- LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger) -->
                   <span class="method-name">LoginToAccount</span>
-                  <span class="parameters">(https://www.superleague.com, buffboyali@gmail.com, messenger)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:24)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginToAccount(https://www.superleague.com, failedtest@gmail.com, 12345678)">
-                  </a> <!-- LoginToAccount(https://www.superleague.com, failedtest@gmail.com, 12345678) -->
+                  <a name="LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)">
+                  </a> <!-- LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678) -->
                   <span class="method-name">LoginToAccount</span>
-                  <span class="parameters">(https://www.superleague.com, failedtest@gmail.com, 12345678)</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at testcases.SignUpPage_Login_Test.LoginToAccount(SignUpPage_Login_Test.java:24)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
+                  <span class="parameters">(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
-          <div class="suite-Suite-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">testcases.SignUpPage_Register_Test</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="NavigatetoRegistrationPage">
-                  </a> <!-- NavigatetoRegistrationPage -->
-                  <span class="method-name">NavigatetoRegistrationPage</span>
-                  <div class="stack-trace">java.lang.NullPointerException
-	at testcases.SignUpPage_Register_Test.NavigatetoRegistrationPage(SignUpPage_Register_Test.java:20)
-... Removed 25 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-Suite-class-failed -->
+          </div> <!-- suite-Suite-class-passed -->
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -240,26 +193,16 @@
     &lt;listener class-name=&quot;resources.Listeners&quot;/&gt;
     &lt;listener class-name=&quot;resources.ExtentReporterNG&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Opening Landing Page&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Opening Facebook Landing Page&quot;&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;testcases.HomePage_Landing_Test&quot;/&gt;
+      &lt;class name=&quot;testcases.FB_LandingPage_Test&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Opening Landing Page --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Navigating to Login/SignUp Page&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testcases.HomePage_Login_Test&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Navigating to Login/SignUp Page --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Signing in using invalid and invalid email&quot;&gt;
+  &lt;/test&gt; &lt;!-- Opening Facebook Landing Page --&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;SuperLeague: Signing in using invalid and invalid email&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;testcases.SignUpPage_Login_Test&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Signing in using invalid and invalid email --&gt;
-  &lt;test thread-count=&quot;5&quot; name=&quot;Navigating to Registrationg Page&quot;&gt;
-    &lt;classes&gt;
-      &lt;class name=&quot;testcases.SignUpPage_Register_Test&quot;/&gt;
-    &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Navigating to Registrationg Page --&gt;
+  &lt;/test&gt; &lt;!-- SuperLeague: Signing in using invalid and invalid email --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -271,16 +214,10 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Opening Landing Page (1 class)</span>
+                <span class="test-name">Opening Facebook Landing Page (1 class)</span>
               </li>
               <li>
-                <span class="test-name">Navigating to Login/SignUp Page (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Signing in using invalid and invalid email (1 class)</span>
-              </li>
-              <li>
-                <span class="test-name">Navigating to Registrationg Page (1 class)</span>
+                <span class="test-name">SuperLeague: Signing in using invalid and invalid email (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -306,32 +243,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(5);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'NavigateToHomePage')
-data.setCell(0, 2, 'testcases.HomePage_Landing_Test')
-data.setCell(0, 3, 12);
+data.setCell(0, 1, 'LoginToAccount')
+data.setCell(0, 2, 'testcases.SignUpPage_Login_Test')
+data.setCell(0, 3, 8381);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'NavigateToLoginPage')
-data.setCell(1, 2, 'testcases.HomePage_Login_Test')
-data.setCell(1, 3, 3);
+data.setCell(1, 1, 'LoginToAccount')
+data.setCell(1, 2, 'testcases.SignUpPage_Login_Test')
+data.setCell(1, 3, 5677);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'NavigatetoRegistrationPage')
-data.setCell(2, 2, 'testcases.SignUpPage_Register_Test')
-data.setCell(2, 3, 2);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'LoginToAccount')
-data.setCell(3, 2, 'testcases.SignUpPage_Login_Test')
-data.setCell(3, 3, 1);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'LoginToAccount')
-data.setCell(4, 2, 'testcases.SignUpPage_Login_Test')
-data.setCell(4, 3, 1);
+data.setCell(2, 1, 'Login')
+data.setCell(2, 2, 'testcases.FB_LandingPage_Test')
+data.setCell(2, 3, 2298);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 19 ms</span>
+              <span class="suite-total-time">Total running time: 16 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -357,45 +286,23 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">testcases.HomePage_Landing_Test</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">testcases.FB_LandingPage_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">NavigateToHomePage</span>
+                <span class="method-name">Login</span>
                 <span class="method-start">0 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.HomePage_Login_Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">NavigateToLoginPage</span>
-                <span class="method-start">6372 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.SignUpPage_Login_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginToAccount(https://www.superleague.com, failedtest@gmail.com, 12345678)</span>
-                <span class="method-start">12501 ms</span>
+                <span class="method-name">LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</span>
+                <span class="method-start">4235 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">LoginToAccount(https://www.superleague.com, buffboyali@gmail.com, messenger)</span>
-                <span class="method-start">13369 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">testcases.SignUpPage_Register_Test</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">NavigatetoRegistrationPage</span>
-                <span class="method-start">19329 ms</span>
+                <span class="method-name">LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</span>
+                <span class="method-start">9914 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

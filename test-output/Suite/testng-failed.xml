@@ -5,40 +5,13 @@
     <listener class-name="resources.Listeners"/>
     <listener class-name="resources.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Opening Landing Page(failed)">
+  <test thread-count="5" name="Opening Facebook Landing Page(failed)">
     <classes>
-      <class name="testcases.HomePage_Landing_Test">
+      <class name="testcases.FB_LandingPage_Test">
         <methods>
-          <include name="NavigateToHomePage"/>
+          <include name="Login"/>
         </methods>
-      </class> <!-- testcases.HomePage_Landing_Test -->
+      </class> <!-- testcases.FB_LandingPage_Test -->
     </classes>
-  </test> <!-- Opening Landing Page(failed) -->
-  <test thread-count="5" name="Navigating to Login/SignUp Page(failed)">
-    <classes>
-      <class name="testcases.HomePage_Login_Test">
-        <methods>
-          <include name="NavigateToLoginPage"/>
-        </methods>
-      </class> <!-- testcases.HomePage_Login_Test -->
-    </classes>
-  </test> <!-- Navigating to Login/SignUp Page(failed) -->
-  <test thread-count="5" name="Signing in using invalid and invalid email(failed)">
-    <classes>
-      <class name="testcases.SignUpPage_Login_Test">
-        <methods>
-          <include name="LoginToAccount" invocation-numbers="0 1"/>
-        </methods>
-      </class> <!-- testcases.SignUpPage_Login_Test -->
-    </classes>
-  </test> <!-- Signing in using invalid and invalid email(failed) -->
-  <test thread-count="5" name="Navigating to Registrationg Page(failed)">
-    <classes>
-      <class name="testcases.SignUpPage_Register_Test">
-        <methods>
-          <include name="NavigatetoRegistrationPage"/>
-        </methods>
-      </class> <!-- testcases.SignUpPage_Register_Test -->
-    </classes>
-  </test> <!-- Navigating to Registrationg Page(failed) -->
+  </test> <!-- Opening Facebook Landing Page(failed) -->
 </suite> <!-- Failed suite [Suite] -->
