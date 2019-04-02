@@ -1,0 +1,20 @@
+2019-04-02 15:43:06 [main] INFO  Setup:71 - Driver is initialized!
+2019-04-02 15:43:06 [main] INFO  Setup:73 - URL opened: about:blank
+2019-04-02 15:43:08 [main] INFO  Setup:19 - Opening Page: Facebook - Log In or Sign Up
+2019-04-02 15:43:08 [main] INFO  Setup:33 - Expecting: [See photos and updates] BUT Actual: See photos and updates
+2019-04-02 15:43:08 [main] INFO  Setup:80 - WebDriver Successfully Quit!
+2019-04-02 15:43:10 [main] INFO  Setup:71 - Driver is initialized!
+2019-04-02 15:43:10 [main] INFO  Setup:73 - URL opened: about:blank
+2019-04-02 15:43:13 [main] INFO  Setup:16 - Opening Page: Login - Super League Gaming
+2019-04-02 15:43:13 [main] INFO  Setup:20 - Email textbox is clicked
+2019-04-02 15:43:14 [main] INFO  Setup:23 - email: failedtest@gmail.com is sent
+2019-04-02 15:43:14 [main] INFO  Setup:26 - Login Button is displayed
+2019-04-02 15:43:14 [main] INFO  Setup:29 - password: 12345678 is sent
+2019-04-02 15:43:16 [main] INFO  Setup:32 - Submit Button is clicked
+2019-04-02 15:43:17 [main] INFO  Setup:16 - Opening Page: Login - Super League Gaming
+2019-04-02 15:43:17 [main] INFO  Setup:20 - Email textbox is clicked
+2019-04-02 15:43:18 [main] INFO  Setup:23 - email: buffboyali@gmail.com is sent
+2019-04-02 15:43:18 [main] INFO  Setup:26 - Login Button is displayed
+2019-04-02 15:43:18 [main] INFO  Setup:29 - password: messenger is sent
+2019-04-02 15:43:25 [main] INFO  Setup:32 - Submit Button is clicked
+2019-04-02 15:43:25 [main] INFO  Setup:80 - WebDriver Successfully Quit!

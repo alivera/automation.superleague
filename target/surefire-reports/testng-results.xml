@@ -2,12 +2,12 @@
 <testng-results total="3" passed="2" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-01T22:45:01Z" name="Suite" finished-at="2019-04-01T22:45:31Z" duration-ms="30096">
+  <suite started-at="2019-04-02T22:43:03Z" name="Suite" finished-at="2019-04-02T22:43:25Z" duration-ms="21621">
     <groups>
     </groups>
-    <test started-at="2019-04-01T22:45:01Z" name="Opening Facebook Landing Page" finished-at="2019-04-01T22:45:09Z" duration-ms="7824">
+    <test started-at="2019-04-02T22:43:03Z" name="Opening Facebook Landing Page" finished-at="2019-04-02T22:43:08Z" duration-ms="4804">
       <class name="testcases.FB_LandingPage_Test">
-        <test-method signature="Login()[pri:0, instance:testcases.FB_LandingPage_Test@5d8bafa9]" started-at="2019-04-01T15:45:04Z" name="Login" finished-at="2019-04-01T15:45:08Z" duration-ms="4121" status="FAIL">
+        <test-method signature="Login()[pri:0, instance:testcases.FB_LandingPage_Test@576f63f6]" started-at="2019-04-02T15:43:06Z" name="Login" finished-at="2019-04-02T15:43:08Z" duration-ms="2225" status="FAIL">
           <exception class="java.lang.AssertionError">
             <message>
               <![CDATA[expected [Share what's new] but found [Some Random Text]]]>
@@ -56,9 +56,9 @@
         </test-method> <!-- Login -->
       </class> <!-- testcases.FB_LandingPage_Test -->
     </test> <!-- Opening Facebook Landing Page -->
-    <test started-at="2019-04-01T22:45:09Z" name="SuperLeague: Signing in using invalid and invalid email" finished-at="2019-04-01T22:45:31Z" duration-ms="22081">
+    <test started-at="2019-04-02T22:43:08Z" name="SuperLeague: Signing in using invalid and invalid email" finished-at="2019-04-02T22:43:25Z" duration-ms="16680">
       <class name="testcases.SignUpPage_Login_Test">
-        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@17a1e4ca]" started-at="2019-04-01T15:45:11Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-01T15:45:21Z" duration-ms="10201" status="PASS">
+        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@10ded6a9]" started-at="2019-04-02T15:43:10Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-02T15:43:16Z" duration-ms="6107" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -79,7 +79,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToAccount -->
-        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@17a1e4ca]" started-at="2019-04-01T15:45:21Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-01T15:45:31Z" duration-ms="10174" status="PASS">
+        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@10ded6a9]" started-at="2019-04-02T15:43:16Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-02T15:43:25Z" duration-ms="9301" status="PASS">
           <params>
             <param index="0">
               <value>
