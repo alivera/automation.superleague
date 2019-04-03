@@ -1,26 +1,146 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="3" passed="2" failed="1" skipped="0">
+<testng-results ignored="0" total="5" passed="2" failed="3" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-04-01T22:19:04Z" name="Suite" finished-at="2019-04-01T22:19:24Z" duration-ms="20329">
+  <suite started-at="2019-04-03T04:05:03Z" name="Suite" finished-at="2019-04-03T04:05:34Z" duration-ms="30551">
     <groups>
     </groups>
-    <test started-at="2019-04-01T22:19:04Z" name="Opening Facebook Landing Page" finished-at="2019-04-01T22:19:09Z" duration-ms="4702">
+    <test started-at="2019-04-03T04:05:03Z" name="Opening Facebook Landing Page" finished-at="2019-04-03T04:05:17Z" duration-ms="14368">
       <class name="testcases.FB_LandingPage_Test">
-        <test-method signature="Login()[pri:0, instance:testcases.FB_LandingPage_Test@17a87e37]" started-at="2019-04-01T22:19:06Z" name="Login" finished-at="2019-04-01T22:19:08Z" duration-ms="2298" status="FAIL">
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:testcases.FB_LandingPage_Test@a202ccb]" started-at="2019-04-03T04:05:05Z" name="Login" data-provider="getData" finished-at="2019-04-03T04:05:09Z" duration-ms="4116" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[See photos and updates]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
           <exception class="java.lang.AssertionError">
             <message>
-              <![CDATA[expected [Share what's new] but found [meow moew meow]]]>
+              <![CDATA[expected [null] but found [See photos and updates]]]>
             </message>
             <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: expected [Share what's new] but found [meow moew meow]
+              <![CDATA[java.lang.AssertionError: expected [null] but found [See photos and updates]
 at org.testng.Assert.fail(Assert.java:96)
 at org.testng.Assert.failNotEquals(Assert.java:776)
-at org.testng.Assert.assertEqualsImpl(Assert.java:137)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
 at org.testng.Assert.assertEquals(Assert.java:118)
 at org.testng.Assert.assertEquals(Assert.java:453)
 at org.testng.Assert.assertEquals(Assert.java:463)
-at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:35)
+at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:testcases.FB_LandingPage_Test@a202ccb]" started-at="2019-04-03T04:05:10Z" name="Login" data-provider="getData" finished-at="2019-04-03T04:05:13Z" duration-ms="3145" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Share what's new]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [Share what's new]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [Share what's new]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:124)
+at org.testng.internal.Invoker.invokeMethod(Invoker.java:583)
+at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:719)
+at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:989)
+at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:125)
+at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
+at org.testng.TestRunner.privateRun(TestRunner.java:648)
+at org.testng.TestRunner.run(TestRunner.java:505)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:455)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:450)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:415)
+at org.testng.SuiteRunner.run(SuiteRunner.java:364)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:84)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1208)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1137)
+at org.testng.TestNG.runSuites(TestNG.java:1049)
+at org.testng.TestNG.run(TestNG.java:1017)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method signature="Login(java.lang.String, java.lang.String)[pri:0, instance:testcases.FB_LandingPage_Test@a202ccb]" started-at="2019-04-03T04:05:13Z" name="Login" data-provider="getData" finished-at="2019-04-03T04:05:17Z" duration-ms="4034" status="FAIL">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[Find more]]>
+              </value>
+            </param>
+            <param index="1">
+              <value is-null="true"/>
+            </param>
+          </params>
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [null] but found [Find more]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [null] but found [Find more]
+at org.testng.Assert.fail(Assert.java:96)
+at org.testng.Assert.failNotEquals(Assert.java:776)
+at org.testng.Assert.assertEqualsImpl(Assert.java:132)
+at org.testng.Assert.assertEquals(Assert.java:118)
+at org.testng.Assert.assertEquals(Assert.java:453)
+at org.testng.Assert.assertEquals(Assert.java:463)
+at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:57)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -54,9 +174,9 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
         </test-method> <!-- Login -->
       </class> <!-- testcases.FB_LandingPage_Test -->
     </test> <!-- Opening Facebook Landing Page -->
-    <test started-at="2019-04-01T22:19:09Z" name="SuperLeague: Signing in using invalid and invalid email" finished-at="2019-04-01T22:19:24Z" duration-ms="15490">
+    <test started-at="2019-04-03T04:05:18Z" name="SuperLeague: Signing in using invalid and invalid email" finished-at="2019-04-03T04:05:34Z" duration-ms="16028">
       <class name="testcases.SignUpPage_Login_Test">
-        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@4c398c80]" started-at="2019-04-01T22:19:10Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-01T22:19:16Z" duration-ms="5677" status="PASS">
+        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@4c398c80]" started-at="2019-04-03T04:05:19Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-03T04:05:25Z" duration-ms="6386" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -77,7 +197,7 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginToAccount -->
-        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@4c398c80]" started-at="2019-04-01T22:19:16Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-01T22:19:24Z" duration-ms="8381" status="PASS">
+        <test-method signature="LoginToAccount(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:testcases.SignUpPage_Login_Test@4c398c80]" started-at="2019-04-03T04:05:25Z" name="LoginToAccount" data-provider="getData" finished-at="2019-04-03T04:05:34Z" duration-ms="8298" status="PASS">
           <params>
             <param index="0">
               <value>

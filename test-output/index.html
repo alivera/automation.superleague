@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite, 3 failed tests</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -91,7 +91,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                    <span class="method-stats">5 methods, 3 failed,   2 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -102,7 +102,17 @@
                     <div class="method-list-content failed suite-Suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.FB_LandingPage_Test" class="method navigator-link" hash-for-method="Login">Login</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.FB_LandingPage_Test" class="method navigator-link" hash-for-method="Login(See photos and updates, null)">Login(See photos and updates, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.FB_LandingPage_Test" class="method navigator-link" hash-for-method="Login(Share what&#039;s new, null)">Login(Share what's new, null)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Suite" title="testcases.FB_LandingPage_Test" class="method navigator-link" hash-for-method="Login(Find more, null)">Login(Find more, null)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Suite -->
@@ -116,12 +126,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)">LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)">LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)">LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Suite" title="testcases.SignUpPage_Login_Test" class="method navigator-link" hash-for-method="LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)">LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -144,11 +154,36 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="Login">
-                  </a> <!-- Login -->
+                  <a name="Login(See photos and updates, null)">
+                  </a> <!-- Login(See photos and updates, null) -->
                   <span class="method-name">Login</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [Share what&apos;s new] but found [meow moew meow]
-	at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:35)
+                  <span class="parameters">(See photos and updates, null)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [See photos and updates]
+	at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:57)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(Share what&#039;s new, null)">
+                  </a> <!-- Login(Share what's new, null) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Share what's new, null)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [Share what&apos;s new]
+	at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:57)
+... Removed 31 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="Login(Find more, null)">
+                  </a> <!-- Login(Find more, null) -->
+                  <span class="method-name">Login</span>
+                  <span class="parameters">(Find more, null)</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [null] but found [Find more]
+	at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:57)
 ... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
@@ -163,18 +198,18 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)">
-                  </a> <!-- LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger) -->
-                  <span class="method-name">LoginToAccount</span>
-                  <span class="parameters">(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
                   <a name="LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)">
                   </a> <!-- LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678) -->
                   <span class="method-name">LoginToAccount</span>
                   <span class="parameters">(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)">
+                  </a> <!-- LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger) -->
+                  <span class="method-name">LoginToAccount</span>
+                  <span class="parameters">(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -243,24 +278,32 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'LoginToAccount')
 data.setCell(0, 2, 'testcases.SignUpPage_Login_Test')
-data.setCell(0, 3, 8381);
+data.setCell(0, 3, 8298);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'LoginToAccount')
 data.setCell(1, 2, 'testcases.SignUpPage_Login_Test')
-data.setCell(1, 3, 5677);
+data.setCell(1, 3, 6386);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'Login')
 data.setCell(2, 2, 'testcases.FB_LandingPage_Test')
-data.setCell(2, 3, 2298);
+data.setCell(2, 3, 4116);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'Login')
+data.setCell(3, 2, 'testcases.FB_LandingPage_Test')
+data.setCell(3, 3, 4034);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'Login')
+data.setCell(4, 2, 'testcases.FB_LandingPage_Test')
+data.setCell(4, 3, 3145);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 16 seconds</span>
+              <span class="suite-total-time">Total running time: 25 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -290,19 +333,31 @@ return data;
               <div class="test-method">
                 <img src="failed.png">
                 </img>
-                <span class="method-name">Login</span>
+                <span class="method-name">Login(See photos and updates, null)</span>
                 <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(Share what's new, null)</span>
+                <span class="method-start">4494 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">Login(Find more, null)</span>
+                <span class="method-start">7924 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">testcases.SignUpPage_Login_Test</div> <!-- chronological-class-name -->
               <div class="test-method">
                 <span class="method-name">LoginToAccount(https://www.superleague.com/login/, failedtest@gmail.com, 12345678)</span>
-                <span class="method-start">4235 ms</span>
+                <span class="method-start">13743 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">LoginToAccount(https://www.superleague.com/login/, buffboyali@gmail.com, messenger)</span>
-                <span class="method-start">9914 ms</span>
+                <span class="method-start">20131 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

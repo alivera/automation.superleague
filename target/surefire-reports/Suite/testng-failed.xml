@@ -9,7 +9,7 @@
     <classes>
       <class name="testcases.FB_LandingPage_Test">
         <methods>
-          <include name="Login"/>
+          <include name="Login" invocation-numbers="0 1 2"/>
         </methods>
       </class> <!-- testcases.FB_LandingPage_Test -->
     </classes>

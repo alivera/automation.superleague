@@ -12,7 +12,7 @@ public class SignUpPage_Login_Test extends Setup {
 	
 		//initialize
 		SignUpPage_Login_PF login = new SignUpPage_Login_PF(driver);
-		driver.get("https://www.superleague.com/login/");
+		driver.get(url);
 		Log.info("Opening Page: " + driver.getTitle());
 		
 		//begin test		
