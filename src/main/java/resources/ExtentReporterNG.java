@@ -62,9 +62,9 @@ public class ExtentReporterNG implements IReporter {
         return reportFileLocation;
     }
  
-    private synchronized ExtentTest getTest() {
+    /* private synchronized ExtentTest getTest() {
         return extentTestMap.get((int) (long) (Thread.currentThread().getId()));
-    }
+    } */
  
     private synchronized void endTest() {
         extent.flush();

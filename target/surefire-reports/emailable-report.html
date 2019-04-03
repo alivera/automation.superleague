@@ -31,43 +31,60 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <body>
 <table cellspacing="0" cellpadding="0" class="result">
 <tr><th>Test</th><th class="numi">Methods<br/>Passed</th><th class="numi">Scenarios<br/>Passed</th><th class="numi"># skipped</th><th class="numi"># failed</th><th class="numi">Total<br/>Time</th><th class="numi">Included<br/>Groups</th><th class="numi">Excluded<br/>Groups</th></tr>
-<tr><td style="text-align:left;padding-right:2em">Opening Facebook Landing Page</td><td class="numi">3</td><td class="numi">3</td><td class="numi">0</td><td class="numi">0</td><td class="numi">25.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
-<tr class="stripe"><td style="text-align:left;padding-right:2em">SuperLeague: Signing in using invalid and invalid email</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">15.2 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr><td style="text-align:left;padding-right:2em">Opening Facebook Landing Page</td><td class="numi">3</td><td class="numi">2</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">13.7 seconds</td><td class="numi"></td><td class="numi"></td></tr>
+<tr class="stripe"><td style="text-align:left;padding-right:2em">SuperLeague: Signing in using invalid and invalid email</td><td class="numi">2</td><td class="numi">2</td><td class="numi">0</td><td class="numi">0</td><td class="numi">16.1 seconds</td><td class="numi"></td><td class="numi"></td></tr>
 <tr class="total"><td>Total</td>
-<td class="numi">5</td><td class="numi">5</td><td class="numi">0</td><td class="numi">0</td><td class="numi">40.9 seconds</td><td colspan="2">&nbsp;</td></tr>
+<td class="numi">5</td><td class="numi">4</td><td class="numi">0</td><td class="numi_attn">3</td><td class="numi">29.9 seconds</td><td colspan="2">&nbsp;</td></tr>
 </table>
 <table cellspacing="0" cellpadding="0" class="passed" id="summary">
 <tr><th>Class</th><th>Method</th><th># of<br/>Scenarios</th><th>Start</th><th>Time<br/>(ms)</th></tr>
+<tr><th colspan="4">Opening Facebook Landing Page &#8212; failed</th></tr>
+<tr class="failedodd"><td rowspan="3">testcases.FB_LandingPage_Test</td><td><a href="#m1"><b>Login</b>  </a></td><td class="numi">1</td><td>1554320706697</td><td class="numi">1497</td></tr><tr class="failedodd"><td><a href="#m2"><b>Login</b>  </a></td><td class="numi">1</td><td>1554320706697</td><td class="numi">1497</td></tr><tr class="failedodd"><td><a href="#m3"><b>Login</b>  </a></td><td class="numi">1</td><td>1554320706697</td><td class="numi">1497</td></tr>
 <tr><th colspan="4">Opening Facebook Landing Page &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="3">testcases.FB_LandingPage_Test</td><td><a href="#m1"><b>Login</b>  </a></td><td class="numi">3</td><td>1554269549694</td><td class="numi">23696</td></tr><tr class="passedodd"><td><a href="#m2"><b>Login</b>  </a></td><td class="numi">3</td><td>1554269549694</td><td class="numi">23696</td></tr><tr class="passedodd"><td><a href="#m3"><b>Login</b>  </a></td><td class="numi">3</td><td>1554269549694</td><td class="numi">23696</td></tr>
+<tr class="passedodd"><td rowspan="3">testcases.FB_LandingPage_Test</td><td><a href="#m4"><b>Login</b>  </a></td><td class="numi">2</td><td>1554320701812</td><td class="numi">9771</td></tr><tr class="passedodd"><td><a href="#m5"><b>Login</b>  </a></td><td class="numi">2</td><td>1554320701812</td><td class="numi">9771</td></tr><tr class="passedodd"><td><a href="#m6"><b>Login</b>  </a></td><td class="numi">2</td><td>1554320701812</td><td class="numi">9771</td></tr>
 <tr><th colspan="4">SuperLeague: Signing in using invalid and invalid email &#8212; passed</th></tr>
-<tr class="passedodd"><td rowspan="2">testcases.SignUpPage_Login_Test</td><td><a href="#m4"><b>LoginToAccount</b>  </a></td><td class="numi">2</td><td>1554269574792</td><td class="numi">13884</td></tr><tr class="passedodd"><td><a href="#m5"><b>LoginToAccount</b>  </a></td><td class="numi">2</td><td>1554269574792</td><td class="numi">13884</td></tr>
+<tr class="passedodd"><td rowspan="2">testcases.SignUpPage_Login_Test</td><td><a href="#m7"><b>LoginToAccount</b>  </a></td><td class="numi">2</td><td>1554320713042</td><td class="numi">14808</td></tr><tr class="passedodd"><td><a href="#m8"><b>LoginToAccount</b>  </a></td><td class="numi">2</td><td>1554320713042</td><td class="numi">14808</td></tr>
 </table>
 <h1>Opening Facebook Landing Page</h1>
 <h2 id="m1">testcases.FB_LandingPage_Test:Login</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
-<tr class="param stripe"><td>https://www.facebook.com/</td>
-<td>null</td>
-<td>null</td>
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>username2@email.com</td>
+<td>password123</td>
+<td>Share what&apos;s new</td>
+<td>This test will fail</td>
+<td>Test2</td>
 </tr>
+<tr><td style="padding-left:3em" colspan="5">
+<p>Test2 expected [This test will fail] but found [Share what&apos;s new]</p>
+org.testng.Assert.fail(Assert.java:94)
+<br/>at org.testng.Assert.failNotEquals(Assert.java:494)
+<br/>at org.testng.Assert.assertEquals(Assert.java:123)
+<br/>at org.testng.Assert.assertEquals(Assert.java:176)
+<br/>at testcases.FB_LandingPage_Test.Login(FB_LandingPage_Test.java:36)
+<br/>29 lines not shown
+</td></tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m2">testcases.FB_LandingPage_Test:Login</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
-<tr class="param stripe"><td>https://www.facebook.com/</td>
-<td>null</td>
-<td>null</td>
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>username1@email.com</td>
+<td>password123</td>
+<td>See photos and updates</td>
+<td>See photos and updates</td>
+<td>Test1</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
 <h2 id="m3">testcases.FB_LandingPage_Test:Login</h2>
 <table cellspacing="0" cellpadding="0" class="result">
-<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
-<tr class="param stripe"><td>https://www.facebook.com/</td>
-<td>null</td>
-<td>null</td>
+<tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr>
+<tr class="param stripe"><td>username3@email.com</td>
+<td>password123</td>
+<td>Find more</td>
+<td>Find more</td>
+<td>Test3</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
@@ -76,8 +93,8 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
 <tr class="param stripe"><td>https://www.superleague.com/login/</td>
-<td>buffboyali@gmail.com</td>
-<td>messenger</td>
+<td>failedtest@gmail.com</td>
+<td>12345678</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
@@ -85,8 +102,8 @@ div.shootout {padding:2em;border:3px #4854A8 solid}
 <table cellspacing="0" cellpadding="0" class="result">
 <tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th></tr>
 <tr class="param stripe"><td>https://www.superleague.com/login/</td>
-<td>failedtest@gmail.com</td>
-<td>12345678</td>
+<td>buffboyali@gmail.com</td>
+<td>messenger</td>
 </tr>
 </table>
 <p class="totop"><a href="#summary">back to summary</a></p>
