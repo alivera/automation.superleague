@@ -7,6 +7,13 @@
 		<listener class-name="resources.ExtentReporterNG"/>
 	</listeners>
 
+	<test name="Opening Travelocity Landing Page">
+	    <classes>
+	    	<class name="testcases.Trvlc_LandingPage_Test"/>
+	    </classes>
+  	</test> <!-- End Test -->
+  	
+
   <test name="Opening Facebook Landing Page">
     <classes>
     	<class name="testcases.FB_LandingPage_Test"/>
@@ -18,7 +25,7 @@
     <classes>
         <class name="testcases.SignUpPage_Login_Test"/>
     </classes>
-  </test> <!-- End Test -->
+  </test>  <!-- End Test -->
   
   
 </suite> <!-- Suite -->
